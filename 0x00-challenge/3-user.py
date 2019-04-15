@@ -60,7 +60,7 @@ class User():
         if self.__password is None:
             return False
         #return hashlib.md5(pwd.encode()).hexdigest().upper() == self.__password
-        return self.hash_case_insensitive(pwd) == self.__password
+        return self.hash_case_insensitive(pwd) == self.password
 
 
 if __name__ == '__main__':
